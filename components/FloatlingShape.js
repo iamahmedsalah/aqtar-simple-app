@@ -4,7 +4,7 @@ import { motion }from 'framer-motion';
 
 const FloatlingShape = ({color, size, top, left, delay}) => {
     return (
-        <motion.div className={`absolute rounded-full ${color} ${size} opacity-40 blur-xl`}
+        <motion.div className={`absolute rounded-full ${color} ${size} opacity-40 blur-xl max-sm:hidden`}
         style={{top, left}}
         animate={{
             y: ['0%', '70%', '0%'],
